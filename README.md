@@ -1,5 +1,5 @@
 ---
-title:  Financial Technology with a System on Chip
+title:  Financial Technology with a Processing Unit
 author: QueenField
 geometry: "left=3cm,right=2cm,top=3cm,bottom=2cm"
 ---
