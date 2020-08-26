@@ -1,0 +1,147 @@
+###################################################################################
+##                                            __ _      _     _                  ##
+##                                           / _(_)    | |   | |                 ##
+##                __ _ _   _  ___  ___ _ __ | |_ _  ___| | __| |                 ##
+##               / _` | | | |/ _ \/ _ \ '_ \|  _| |/ _ \ |/ _` |                 ##
+##              | (_| | |_| |  __/  __/ | | | | | |  __/ | (_| |                 ##
+##               \__, |\__,_|\___|\___|_| |_|_| |_|\___|_|\__,_|                 ##
+##                  | |                                                          ##
+##                  |_|                                                          ##
+##                                                                               ##
+##                                                                               ##
+##              Neural Turing Machine                                            ##
+##              Software                                                         ##
+##                                                                               ##
+###################################################################################
+
+###################################################################################
+##                                                                               ##
+## Copyright (c) 2020-2021 by the author(s)                                      ##
+##                                                                               ##
+## Permission is hereby granted, free of charge, to any person obtaining a copy  ##
+## of this software and associated documentation files (the "Software"), to deal ##
+## in the Software without restriction, including without limitation the rights  ##
+## to use, copy, modify, merge, publish, distribute, sublicense, and/or sell     ##
+## copies of the Software, and to permit persons to whom the Software is         ##
+## furnished to do so, subject to the following conditions:                      ##
+##                                                                               ##
+## The above copyright notice and this permission notice shall be included in    ##
+## all copies or substantial portions of the Software.                           ##
+##                                                                               ##
+## THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR    ##
+## IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,      ##
+## FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE   ##
+## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER        ##
+## LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, ##
+## OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN     ##
+## THE SOFTWARE.                                                                 ##
+##                                                                               ##
+## ============================================================================= ##
+## Author(s):                                                                    ##
+##   Paco Reina Campo <pacoreinacampo@queenfield.tech>                           ##
+##                                                                               ##
+###################################################################################
+
+#####################################################################
+# OpenNN Sources
+#####################################################################
+SOURCES =	../../pu-ntm/opennn/adaptive_moment_estimation.cpp \
+		../../pu-ntm/opennn/adaptive_moment_estimation.h \
+		../../pu-ntm/opennn/bounding_layer.cpp \
+		../../pu-ntm/opennn/bounding_layer.h \
+		../../pu-ntm/opennn/conjugate_gradient.cpp \
+		../../pu-ntm/opennn/conjugate_gradient.h \
+		../../pu-ntm/opennn/convolutional_layer.cpp \
+		../../pu-ntm/opennn/convolutional_layer.h \
+		../../pu-ntm/opennn/correlations.cpp \
+		../../pu-ntm/opennn/correlations.h \
+		../../pu-ntm/opennn/cross_entropy_error.cpp \
+		../../pu-ntm/opennn/cross_entropy_error.h \
+		../../pu-ntm/opennn/data_set.cpp \
+		../../pu-ntm/opennn/data_set.h \
+		../../pu-ntm/opennn/functions.cpp \
+		../../pu-ntm/opennn/functions.h \
+		../../pu-ntm/opennn/genetic_algorithm.cpp \
+		../../pu-ntm/opennn/genetic_algorithm.h \
+		../../pu-ntm/opennn/gradient_descent.cpp \
+		../../pu-ntm/opennn/gradient_descent.h \
+		../../pu-ntm/opennn/growing_inputs.cpp \
+		../../pu-ntm/opennn/growing_inputs.h \
+		../../pu-ntm/opennn/incremental_neurons.cpp \
+		../../pu-ntm/opennn/incremental_neurons.h \
+		../../pu-ntm/opennn/inputs_selection.cpp \
+		../../pu-ntm/opennn/inputs_selection.h \
+		../../pu-ntm/opennn/k_means.cpp \
+		../../pu-ntm/opennn/k_means.h \
+		../../pu-ntm/opennn/layer.cpp \
+		../../pu-ntm/opennn/layer.h \
+		../../pu-ntm/opennn/learning_rate_algorithm.cpp \
+		../../pu-ntm/opennn/learning_rate_algorithm.h \
+		../../pu-ntm/opennn/levenberg_marquardt_algorithm.cpp \
+		../../pu-ntm/opennn/levenberg_marquardt_algorithm.h \
+		../../pu-ntm/opennn/long_short_term_memory_layer.cpp \
+		../../pu-ntm/opennn/long_short_term_memory_layer.h \
+		../../pu-ntm/opennn/loss_index.cpp \
+		../../pu-ntm/opennn/loss_index.h \
+		../../pu-ntm/opennn/matrix.h \
+		../../pu-ntm/opennn/mean_squared_error.cpp \
+		../../pu-ntm/opennn/mean_squared_error.h \
+		../../pu-ntm/opennn/metrics.cpp \
+		../../pu-ntm/opennn/metrics.h \
+		../../pu-ntm/opennn/minkowski_error.cpp \
+		../../pu-ntm/opennn/minkowski_error.h \
+		../../pu-ntm/opennn/model_selection.cpp \
+		../../pu-ntm/opennn/model_selection.h \
+		../../pu-ntm/opennn/neural_network.cpp \
+		../../pu-ntm/opennn/neural_network.h \
+		../../pu-ntm/opennn/neurons_selection.cpp \
+		../../pu-ntm/opennn/neurons_selection.h \
+		../../pu-ntm/opennn/normalized_squared_error.cpp \
+		../../pu-ntm/opennn/normalized_squared_error.h \
+		../../pu-ntm/opennn/numerical_differentiation.cpp \
+		../../pu-ntm/opennn/numerical_differentiation.h \
+		../../pu-ntm/opennn/opennn.h \
+		../../pu-ntm/opennn/opennn_strings.cpp \
+		../../pu-ntm/opennn/opennn_strings.h \
+		../../pu-ntm/opennn/optimization_algorithm.cpp \
+		../../pu-ntm/opennn/optimization_algorithm.h \
+		../../pu-ntm/opennn/perceptron_layer.cpp \
+		../../pu-ntm/opennn/perceptron_layer.h \
+		../../pu-ntm/opennn/pooling_layer.cpp \
+		../../pu-ntm/opennn/pooling_layer.h \
+		../../pu-ntm/opennn/principal_components_layer.cpp \
+		../../pu-ntm/opennn/principal_components_layer.h \
+		../../pu-ntm/opennn/probabilistic_layer.cpp \
+		../../pu-ntm/opennn/probabilistic_layer.h \
+		../../pu-ntm/opennn/pruning_inputs.cpp \
+		../../pu-ntm/opennn/pruning_inputs.h \
+		../../pu-ntm/opennn/quasi_newton_method.cpp \
+		../../pu-ntm/opennn/quasi_newton_method.h \
+		../../pu-ntm/opennn/recurrent_layer.cpp \
+		../../pu-ntm/opennn/recurrent_layer.h \
+		../../pu-ntm/opennn/response_optimization.cpp \
+		../../pu-ntm/opennn/response_optimization.h \
+		../../pu-ntm/opennn/scaling_layer.cpp \
+		../../pu-ntm/opennn/scaling_layer.h \
+		../../pu-ntm/opennn/statistics.cpp \
+		../../pu-ntm/opennn/statistics.h \
+		../../pu-ntm/opennn/stochastic_gradient_descent.cpp \
+		../../pu-ntm/opennn/stochastic_gradient_descent.h \
+		../../pu-ntm/opennn/sum_squared_error.cpp \
+		../../pu-ntm/opennn/sum_squared_error.h \
+		../../pu-ntm/opennn/tensor.h \
+		../../pu-ntm/opennn/testing_analysis.cpp \
+		../../pu-ntm/opennn/testing_analysis.h \
+		../../pu-ntm/opennn/tinyxml2.cpp \
+		../../pu-ntm/opennn/tinyxml2.h \
+		../../pu-ntm/opennn/training_strategy.cpp \
+		../../pu-ntm/opennn/training_strategy.h \
+		../../pu-ntm/opennn/transformations.cpp \
+		../../pu-ntm/opennn/transformations.h \
+		../../pu-ntm/opennn/unit_testing.cpp \
+		../../pu-ntm/opennn/unit_testing.h \
+		../../pu-ntm/opennn/unscaling_layer.cpp \
+		../../pu-ntm/opennn/unscaling_layer.h \
+		../../pu-ntm/opennn/vector.h \
+		../../pu-ntm/opennn/weighted_squared_error.cpp \
+		../../pu-ntm/opennn/weighted_squared_error.h
