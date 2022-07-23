@@ -1,2 +1,2 @@
 rm -f *.pdf
-pandoc ../README.md -s -o PU-FinTech.pdf
+pandoc ../BOOK.md -s -o PU-FinTech.pdf

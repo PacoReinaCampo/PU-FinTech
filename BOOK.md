@@ -48,8 +48,6 @@ An Automation Financial Method (AFM) is the technology and innovation that aims 
 
 # 1. METHODOLOGY
 
-![Project Workflow](doc/project.svg)
-
 ## 1.1. Requirements
 
 ### 1.1.1. Structural UML diagrams
@@ -695,10 +693,6 @@ git clone https://github.com/YosysHQ/SymbiYosys
 ```
 
 ## 4.2. BACK-END OPEN SOURCE TOOLS
-
-![Front-End](doc/front-end.svg)
-
-![Back-End](doc/back-end.svg)
 
 **Library**
 
