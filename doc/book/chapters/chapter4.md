@@ -100,30 +100,6 @@
 
 ##### Traditional MIMD
 
-#### Traditional System on Chip
-
-##### Traditional Bus on Chip
-
-##### Traditional Network on Chip
-
-#### Traditional Multi-Processor System on Chip
-
-## QUANTUM COMPUTING
-
-### Quantum Mechanics
-
-#### Postulate I
-
-#### Postulate II
-
-#### Postulate III
-
-#### Postulate IV
-
-#### Postulate V
-
-#### Postulate VI
-
 ## CLASSES
 
 ### Traditional
