@@ -1,6 +1,6 @@
 ---
 title: 'Financial Technology with a Procesing Unit'
-subtitle: 'QueenField ![](../../icon.jpg)'
+subtitle: 'QueenField ![](../../pu-fintech.svg){width=17cm}'
 
 author: Paco Reina Campo
 
