@@ -3,4 +3,4 @@
 
 ![QueenField](../main/icon.jpg)
 
-**FinTech with a PU-NTM verified with UVM/OSVVM/FV**
+**FinTech with a PU-{ANN/DNC/NTM} verified with UVM/OSVVM/FV**
