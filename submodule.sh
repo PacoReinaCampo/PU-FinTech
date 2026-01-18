@@ -43,12 +43,12 @@
 ###################################################################################
 
 # Remove Submodule
-git rm -rf pu-ntm
-git rm -rf pu-dsa
+git rm -rf pu-dv
+git rm -rf pu-rtos
 
 # Update Submodule
 git submodule update --init --recursive --remote
 
 # Add Submodule
-git submodule add --force https://github.com/PacoReinaCampo/PU-NTM.git pu-ntm
-git submodule add --force https://github.com/PacoReinaCampo/MPSoC-DSA.git pu-dsa
+git submodule add --force https://github.com/PacoReinaCampo/PU-DV.git pu-dv
+git submodule add --force https://github.com/PacoReinaCampo/PU-RTOS.git pu-rtos

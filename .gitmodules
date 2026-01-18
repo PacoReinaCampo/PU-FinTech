@@ -1,6 +1,6 @@
-[submodule "pu-ntm"]
-	path = pu-ntm
-	url = https://github.com/PacoReinaCampo/PU-NTM.git
-[submodule "pu-dsa"]
-	path = pu-dsa
-	url = https://github.com/PacoReinaCampo/MPSoC-DSA.git
+[submodule "pu-dv"]
+	path = pu-dv
+	url = https://github.com/PacoReinaCampo/PU-DV.git
+[submodule "pu-rtos"]
+	path = pu-rtos
+	url = https://github.com/PacoReinaCampo/PU-RTOS.git
